@@ -1,4 +1,5 @@
--- config is used to create a table instead of a view
+-- config is used to create a table instead of a view, automatically is removed from view on snowflake if dbt run was already executed.
+-- And it will create the table with the same name under tables
 {{ 
     config (
     materialized='table'

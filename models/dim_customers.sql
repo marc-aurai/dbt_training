@@ -1,3 +1,10 @@
+-- config is used to create a table instead of a view
+{{ 
+    config (
+    materialized='table'
+    )
+}}
+
 with customers as (
 
     select

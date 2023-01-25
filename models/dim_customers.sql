@@ -1,5 +1,6 @@
 -- config is used to create a table instead of a view, automatically is removed from view on snowflake if dbt run was already executed.
 -- And it will create the table with the same name under tables
+-- only run model: dim_customers --> dbt run --select dim_customers
 {{ 
     config (
     materialized='table'
